@@ -173,7 +173,7 @@ footer {
 .cadeado-selo {
     width: 50px; /* A largura do selo */
     height: auto;
-    margin-bottom: 8px; /* Um pequeno espaçamento para alinhar visualmente */
+    margin-bottom: 10px; /* Um pequeno espaçamento para alinhar visualmente */
 }
 
 /* Certificados */
