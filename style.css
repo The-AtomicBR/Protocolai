@@ -118,22 +118,23 @@ footer {
 /* Responsivo */
 @media (max-width: 768px) {
     .menu {
-        display: none; /* Esconde o menu no mobile */
+        display: none;
         flex-direction: column;
         background-color: #1F3B73;
         position: absolute;
         top: 60px;
-        right: 20px;
-        width: 150px;
-        padding: 10px;
-        border-radius: 8px;
+        right: 0; /* <- Corrige aqui: encosta no lado direito certinho */
+        width: 100%; /* <- Corrige aqui: o menu ocupa 100% da tela */
+        padding: 10px 0;
+        border-radius: 0; /* <- Sem borda redonda no topo */
+        text-align: center; /* <- Centraliza os links */
     }
 
     .menu.active {
-        display: flex; /* Só aparece quando clica */
+        display: flex;
     }
 
     .menu-icon {
-        display: block; /* Mostra o botão ≡ no mobile */
+        display: block;
     }
 }
