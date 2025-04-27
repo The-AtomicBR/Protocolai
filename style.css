@@ -1,3 +1,4 @@
+
 /* Reset básico */
 * {
     margin: 0;
@@ -52,6 +53,26 @@ main {
     background-color: #28b585;
 }
 
+/* HOW IT WORKS */
+.how-it-works {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.step {
+    background-color: #F2F2F2;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
 /* CARDS */
 .cards {
     background-color: #F2F2F2;
@@ -69,6 +90,28 @@ main {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     width: 300px;
     text-align: center;
+}
+
+/* CTA FINAL */
+.cta-final {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.cta-final button {
+    margin-top: 1rem;
+    background-color: #32D296;
+    color: #FFFFFF;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-final button:hover {
+    background-color: #28b585;
 }
 
 /* FOOTER */
@@ -92,12 +135,11 @@ footer {
     margin: 0 auto;
     padding: 15px 40px;
     display: flex;
-    justify-content: flex-start; /* Juntar tudo à esquerda */
+    justify-content: flex-start;
     align-items: center;
-    gap: 80px; /* Espaço entre a logo-texto e o menu */
+    gap: 80px;
     width: 100%;
 }
-
 
 /* LOGO */
 .logo {
@@ -146,7 +188,7 @@ footer {
     cursor: pointer;
 }
 
-/* RESPONSIVO PARA MOBILE */
+/* RESPONSIVO MOBILE */
 @media (max-width: 768px) {
     .menu {
         display: none;
