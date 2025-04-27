@@ -1,133 +1,28 @@
-
-/* Reset básico */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo geral */
-html, body {
+body, html {
     height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #1F3B73;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
-    background-color: #FFFFFF;
-    color: #1F3B73;
 }
 
 main {
     flex: 1;
 }
 
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 4rem 2rem;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    color: #333333;
-    margin-bottom: 2rem;
-}
-
-.hero button {
-    background-color: #32D296;
-    color: #FFFFFF;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.hero button:hover {
-    background-color: #28b585;
-}
-
-/* HOW IT WORKS */
-.how-it-works {
-    text-align: center;
-    padding: 4rem 2rem;
-}
-
-.steps {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.step {
-    background-color: #F2F2F2;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    max-width: 300px;
-}
-
-/* CARDS */
-.cards {
-    background-color: #F2F2F2;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: #FFFFFF;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 300px;
-    text-align: center;
-}
-
-/* CTA FINAL */
-.cta-final {
-    text-align: center;
-    padding: 4rem 2rem;
-}
-
-.cta-final button {
-    margin-top: 1rem;
-    background-color: #32D296;
-    color: #FFFFFF;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.cta-final button:hover {
-    background-color: #28b585;
-}
-
-/* FOOTER */
-footer {
-    background-color: #1F3B73;
-    padding: 1.5rem 2rem;
-    color: #FFFFFF;
-    text-align: center;
-    width: 100%;
-}
-
-/* NAVBAR */
+/* Navbar */
 .navbar {
     background-color: #1F3B73;
     width: 100%;
-    border-bottom: 1px solid #e0e0e0;
 }
 
 .container-navbar {
@@ -135,13 +30,10 @@ footer {
     margin: 0 auto;
     padding: 15px 40px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    gap: 80px;
-    width: 100%;
 }
 
-/* LOGO */
 .logo {
     display: flex;
     align-items: center;
@@ -156,10 +48,8 @@ footer {
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 10px;
 }
 
-/* MENU */
 .menu {
     display: flex;
     gap: 20px;
@@ -167,47 +57,100 @@ footer {
 }
 
 .menu li a {
-    text-decoration: none;
     color: #ffffff;
+    text-decoration: none;
     font-size: 16px;
-    padding: 6px 12px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #32D296;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    text-decoration: none;
     border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
     transition: background-color 0.3s ease;
 }
 
-.menu li a:hover {
-    background-color: #32D296;
-    color: #ffffff;
+.btn-primary:hover {
+    background-color: #28b585;
 }
 
-/* ÍCONE HAMBÚRGUER */
-.menu-icon {
-    display: none;
-    font-size: 28px;
-    color: #ffffff;
-    cursor: pointer;
+/* Benefícios */
+.beneficios {
+    background-color: #F2F2F2;
+    padding: 4rem 2rem;
+    text-align: center;
 }
 
-/* RESPONSIVO MOBILE */
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: #1F3B73;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        padding: 20px 0;
-        border-radius: 0;
-    }
+.beneficios h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
 
-    .menu.active {
-        display: flex;
-    }
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
 
-    .menu-icon {
-        display: block;
-    }
+.card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #666666;
+}
+
+/* Footer */
+footer {
+    background-color: #1F3B73;
+    padding: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
