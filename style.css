@@ -84,11 +84,11 @@ footer {
 .container-navbar {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 15px 40px; /* aumentei dos 10px para 15px de altura e 40px nas laterais */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* ocupa a largura dentro da navbar */
+    width: 100%;
 }
 
 .logo {
