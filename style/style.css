@@ -170,7 +170,7 @@ footer {
 }
 
 /* Cadeado "Site Seguro" */
-.cadeado-selo {
+.cadeado-selo img {
     width: 80px; /* A largura do selo */
     height: auto;
 }
