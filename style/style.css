@@ -142,38 +142,58 @@ footer {
     padding: 40px 80px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .footer-left, .footer-center, .footer-right {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .footer-left {
-    flex: 0 0 150px; /* FIXO */
+    flex: 1;
     align-items: flex-start;
 }
+
 .footer-center {
-    flex: 2; /* Ocupa a maior parte */
+    flex: 2;
     text-align: center;
     align-items: center;
 }
+
 .footer-right {
-    flex: 1; /* Menor */
+    flex: 1;
     align-items: flex-end;
+    text-align: right;
 }
 
-.site-seguro img {
+/* Cadeado ajustado */
+.cadeado-selo {
     width: 50px;
     height: auto;
 }
 
+/* Certificados centralizados */
+.footer-certificados {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.footer-certificados img {
+    width: 60px; /* Tamanho dos selos */
+    height: auto;
+}
+
+/* Links do rodapé */
 .footer-links {
     display: flex;
     justify-content: center;
     gap: 16px;
+    margin-top: 5px;
 }
 
 .footer-links a {
@@ -186,51 +206,14 @@ footer {
     text-decoration: underline;
 }
 
-.footer-certificados {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 10px;
-}
-
-.footer-certificados img {
-    width: 70px;
-    height: auto;
-}
-
-.contact-email {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.contact-email img {
-    width: 20px;
-}
-
-.contact-title {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
 /* Responsivo mobile */
 @media (max-width: 768px) {
     footer {
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        gap: 20px;
     }
     .footer-left, .footer-center, .footer-right {
         align-items: center;
         text-align: center;
     }
-    .footer-right {
-        align-items: center;
-    }
-}
-
-.cadeado-selo {
-    width: 50px; /* ou 80px se quiser maior */
-    height: auto;
 }
