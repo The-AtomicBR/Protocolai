@@ -154,7 +154,7 @@ footer {
 
 .footer-left {
     flex: 1;
-    align-items: left;
+    align-items: center;
 }
 
 .footer-center {
@@ -184,7 +184,7 @@ footer {
 }
 
 .footer-certificados img {
-    width: 60px; /* Tamanho dos selos */
+    width: 50px; /* Tamanho dos selos */
     height: auto;
 }
 
