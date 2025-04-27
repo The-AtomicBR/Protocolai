@@ -154,7 +154,7 @@ footer {
 
 .footer-left {
     flex: 1;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .footer-center {
