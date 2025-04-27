@@ -135,10 +135,10 @@ main {
     color: #666666;
 }
 
-/* Footer */
+/* Footer Atualizado */
 footer {
     background-color: #1F3B73;
-    padding: 2rem;
+    padding: 2rem 1rem;
     color: #ffffff;
     text-align: center;
     margin-top: auto;
@@ -150,21 +150,12 @@ footer {
     margin: 0 auto;
 }
 
-.footer-links a {
-    color: #ffffff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.footer-certificados {
+.linha-superior-certificados,
+.linha-inferior-certificados {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
     margin-bottom: 1rem;
     flex-wrap: wrap;
 }
@@ -178,7 +169,20 @@ footer {
 }
 
 .certificado-item img {
-    height: 30px;
+    height: 50px;
     margin-bottom: 5px;
 }
 
+.copyright-links p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #ffffff;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
