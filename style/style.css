@@ -175,6 +175,11 @@ footer {
     height: auto;
 }
 
+.contact-email img {
+    width: 20px;
+    height: auto;
+}
+
 /* Certificados centralizados */
 .footer-certificados {
     display: flex;
