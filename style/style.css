@@ -152,23 +152,17 @@ footer {
 }
 
 .footer-left {
-    flex: 1;
+    flex: 0 0 150px; /* FIXO */
     align-items: flex-start;
-    gap: 8px;
 }
-
 .footer-center {
-    flex: 2;
+    flex: 2; /* Ocupa a maior parte */
     text-align: center;
     align-items: center;
-    gap: 10px;
 }
-
 .footer-right {
-    flex: 1;
+    flex: 1; /* Menor */
     align-items: flex-end;
-    text-align: right;
-    gap: 8px;
 }
 
 .site-seguro img {
