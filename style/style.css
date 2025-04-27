@@ -233,6 +233,10 @@ footer {
         text-align: center;
     }
 
+    .cadeado-selo img {
+        width: 50px; /* Menor no celular */
+    }
+
     .footer-left, .footer-center, .footer-right {
         flex: none;
         width: 100%;
