@@ -77,8 +77,9 @@ footer {
 }
 
 .navbar {
-    background-color: #1F3B73; /* fundo azul escuro ocupa 100% */
+    background-color: #1F3B73;
     width: 100%;
+    border-bottom: 1px solid #e0e0e0; /* linha cinza bem clara */
 }
 
 .container-navbar {
