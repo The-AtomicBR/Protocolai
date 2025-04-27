@@ -1,85 +1,78 @@
-/* Estilo específico para a tabela de planos */
+/* Seção de Planos */
 .planos {
-    background-color: #F2F2F2;
+    background-color: #f9f9f9;
     padding: 4rem 2rem;
     text-align: center;
 }
 
 .planos h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
-    color: #1F3B73;
 }
 
 .planos .subtitulo {
-    font-size: 1.1rem;
-    color: #666666;
-    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555555;
 }
 
+/* Tabela Responsiva */
 .tabela-planos {
+    max-width: 100%;
     overflow-x: auto;
-    margin-top: 2rem;
+    margin: 0 auto;
 }
 
 .tabela-planos table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    overflow: hidden;
+    min-width: 600px;
 }
 
 .tabela-planos th, .tabela-planos td {
     padding: 1rem;
+    border: 1px solid #dddddd;
     text-align: center;
-    border-bottom: 1px solid #dddddd;
+    font-size: 1rem;
 }
 
-.tabela-planos thead th {
+.tabela-planos th {
     background-color: #1F3B73;
     color: #ffffff;
-    font-size: 1.2rem;
 }
 
-.tabela-planos tbody tr:hover {
-    background-color: #f9f9f9;
+.tabela-planos tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
+/* Botões Planos */
 .botoes-planos {
     margin-top: 2rem;
     display: flex;
+    gap: 20px;
     justify-content: center;
-    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
 .btn-free, .btn-pro {
+    background-color: #32D296;
+    color: #ffffff;
     padding: 1rem 2rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.btn-free {
-    background-color: #ffffff;
-    color: #1F3B73;
-    border: 2px solid #1F3B73;
-}
-
-.btn-free:hover {
-    background-color: #1F3B73;
-    color: #ffffff;
-}
-
-.btn-pro {
-    background-color: #32D296;
-    color: #ffffff;
-}
-
-.btn-pro:hover {
+.btn-free:hover, .btn-pro:hover {
     background-color: #28b585;
+    transform: scale(1.05);
+}
+
+/* Para deixar a tabela com scroll suave no celular */
+@media (max-width: 768px) {
+    .tabela-planos {
+        padding-bottom: 1rem;
+    }
 }
