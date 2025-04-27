@@ -81,12 +81,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: #1F3B73;
-    padding: 10px 20px;
+    padding: 10px 40px; /* aumentei o padding para dar espaço nas laterais */
     color: #ffffff;
-    position: relative;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .logo {
