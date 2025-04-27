@@ -165,7 +165,7 @@ footer {
 
 .footer-right {
     flex: 1;
-    align-items: flex-end;
+    align-items: center;
     text-align: right;
 }
 
