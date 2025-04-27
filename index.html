@@ -1,80 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protocola Ai</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Navbar -->
 <nav class="navbar">
     <div class="container-navbar">
         <div class="logo">
-            <img src="./style/logo.png" alt="Logo Protocola Ai">
+            <img src="logo.png" alt="Logo Protocola Ai">
             <span class="logo-text">Protocola Ai</span>
         </div>
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
         <ul class="menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Planos</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#login">Login</a></li>
         </ul>
     </div>
 </nav>
 
-<main>
-    <section class="hero">
-        <h1>Gere Recibos, Ordens de Serviço e Protocolos em segundos.</h1>
-        <p>Simples, rápido e personalizado.<br>Seu comprovante pronto em poucos cliques, sem complicação.</p>
-        <button onclick="scrollToSection()">Começar Agora</button>
-    </section>
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Documente. Proteja. Cresça.</h1>
+    <p>Gere recibos, ordens de serviço e protocolos com aparência profissional — em segundos.</p>
+    <a href="#" class="btn-primary">Começar Agora Gratuitamente</a>
+</section>
 
-    <section class="how-it-works" id="como-funciona">
-        <h2>Como funciona?</h2>
-        <div class="steps">
-            <div class="step">📝 Preencha o que precisar: nome, valor, serviço.</div>
-            <div class="step">⚡ Gere seu recibo, ordem de serviço ou protocolo na hora.</div>
-            <div class="step">📄 Baixe em PDF ou compartilhe seu link de comprovação.</div>
-        </div>
-    </section>
-
-    <section class="cards">
+<!-- Benefícios -->
+<section class="beneficios">
+    <h2>Porque escolher o Protocola Ai?</h2>
+    <div class="cards">
         <div class="card">
-            <h3>📄 Recibos Personalizados</h3>
-            <p>Seus comprovantes prontos, bonitos e profissionais.</p>
+            <h3>Profissionalismo</h3>
+            <p>Recibos modernos, com seu logo e protocolo automático.</p>
         </div>
         <div class="card">
-            <h3>🔧 Ordens de Serviço</h3>
-            <p>Gere OS em poucos segundos, ideal para prestadores de serviços.</p>
+            <h3>Controle</h3>
+            <p>Acompanhe histórico de recebimentos e organize suas vendas.</p>
         </div>
         <div class="card">
-            <h3>🔑 Protocolos Únicos</h3>
-            <p>Cada documento com número de protocolo para consultas e segurança.</p>
+            <h3>Facilidade</h3>
+            <p>Gere, baixe ou compartilhe recibos em segundos, de qualquer dispositivo.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="cta-final">
-        <h2>Ganhe tempo e impressione seus clientes com documentos profissionais.</h2>
-        <p>Tudo 100% gratuito na versão inicial.</p>
-        <button onclick="scrollToSection()">Começar Agora</button>
-    </section>
-</main>
-
+<!-- Rodapé -->
 <footer>
-    Links institucionais | Política de Privacidade
+    <div class="footer-content">
+        <p>&copy; 2025 Protocola Ai. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Sobre</a> |
+            <a href="#">Termos de Uso</a> |
+            <a href="#">Política de Privacidade</a>
+        </div>
+    </div>
 </footer>
-
-<script>
-function toggleMenu() {
-  const menu = document.querySelector('.menu');
-  menu.classList.toggle('active');
-}
-function scrollToSection() {
-  document.getElementById('como-funciona').scrollIntoView({ behavior: 'smooth' });
-}
-</script>
 
 </body>
 </html>
