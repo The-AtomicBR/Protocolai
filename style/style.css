@@ -139,31 +139,35 @@ main {
 footer {
     background-color: #1F3C88;
     color: white;
-    padding: 40px 60px;
+    padding: 40px 80px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: space-between;
-    margin-top: 60px;
-    gap: 60px;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .footer-left, .footer-center, .footer-right {
     display: flex;
     flex-direction: column;
-    flex: none;
-    min-width: 200px;
-    max-width: 300px;
 }
 
 .footer-left {
+    flex: 1;
     align-items: flex-start;
+    gap: 8px;
 }
 
-.site-seguro {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.footer-center {
+    flex: 2;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-right {
+    flex: 1;
+    align-items: flex-end;
+    text-align: right;
     gap: 8px;
 }
 
@@ -172,18 +176,14 @@ footer {
     height: auto;
 }
 
-.footer-center {
-    text-align: center;
-    align-items: center;
-}
-
 .footer-links {
-    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
 }
 
 .footer-links a {
     color: white;
-    margin: 0 8px;
     text-decoration: none;
     font-size: 14px;
 }
@@ -195,44 +195,40 @@ footer {
 .footer-certificados {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .footer-certificados img {
-    width: 80px;
+    width: 70px;
     height: auto;
-}
-
-.footer-right {
-    align-items: flex-end;
-    text-align: right;
 }
 
 .contact-email {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     gap: 6px;
-    margin-top: 10px;
 }
 
 .contact-email img {
     width: 20px;
-    height: auto;
 }
 
-/* Responsividade */
+.contact-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Responsivo mobile */
 @media (max-width: 768px) {
     footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 20px;
     }
     .footer-left, .footer-center, .footer-right {
         align-items: center;
-        max-width: 100%;
         text-align: center;
     }
     .footer-right {
