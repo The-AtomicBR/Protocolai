@@ -76,8 +76,15 @@ footer {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-size: 20px;
     font-weight: bold;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
 }
 
 .menu {
@@ -93,15 +100,15 @@ footer {
 }
 
 .menu-icon {
-    display: none;
+    display: none; /* NÃO aparece no desktop */
     font-size: 28px;
     cursor: pointer;
 }
 
-/* Responsivo */
+/* Agora o responsivo real */
 @media (max-width: 768px) {
     .menu {
-        display: none;
+        display: none; /* Esconde o menu no mobile */
         flex-direction: column;
         background-color: #1F3B73;
         position: absolute;
@@ -111,10 +118,13 @@ footer {
         padding: 10px;
         border-radius: 8px;
     }
+
     .menu.active {
-        display: flex;
+        display: flex; /* Só aparece quando clica */
     }
+
     .menu-icon {
-        display: block;
+        display: block; /* Mostra o botão ≡ no mobile */
     }
 }
+
