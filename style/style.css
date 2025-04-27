@@ -153,8 +153,8 @@ footer {
 }
 
 .footer-left {
-    flex: 3;
-    align-items: center;
+    flex: 1;
+    align-items: left;
 }
 
 .footer-center {
