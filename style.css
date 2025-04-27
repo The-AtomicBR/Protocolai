@@ -1,10 +1,11 @@
-
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo geral */
 html, body {
     height: 100%;
     overflow-x: hidden;
@@ -19,6 +20,7 @@ main {
     flex: 1;
 }
 
+/* HERO */
 .hero {
     text-align: center;
     padding: 4rem 2rem;
@@ -50,6 +52,7 @@ main {
     background-color: #28b585;
 }
 
+/* CARDS */
 .cards {
     background-color: #F2F2F2;
     display: flex;
@@ -68,6 +71,7 @@ main {
     text-align: center;
 }
 
+/* FOOTER */
 footer {
     background-color: #1F3B73;
     padding: 1.5rem 2rem;
@@ -76,31 +80,27 @@ footer {
     width: 100%;
 }
 
+/* NAVBAR */
 .navbar {
     background-color: #1F3B73;
     width: 100%;
-    border-bottom: 1px solid #e0e0e0; /* linha cinza bem clara */
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .container-navbar {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px 40px; /* aumentei dos 10px para 15px de altura e 40px nas laterais */
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
+/* LOGO */
 .logo {
     display: flex;
     align-items: center;
-}
-.logo-text {
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 10px;
 }
 
 .logo img {
@@ -108,6 +108,14 @@ footer {
     margin-right: 10px;
 }
 
+.logo-text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* MENU */
 .menu {
     display: flex;
     gap: 20px;
@@ -118,136 +126,17 @@ footer {
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
-}
-
-.menu-icon {
-    display: none;
-    font-size: 28px;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Poppins', sans-serif;
-    background-color: #FFFFFF;
-    color: #1F3B73;
-}
-
-main {
-    flex: 1;
-}
-
-.hero {
-    text-align: center;
-    padding: 4rem 2rem;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    color: #333333;
-    margin-bottom: 2rem;
-}
-
-.hero button {
-    background-color: #32D296;
-    color: #FFFFFF;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1rem;
+    padding: 6px 12px;
     border-radius: 8px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.hero button:hover {
-    background-color: #28b585;
-}
-
-.cards {
-    background-color: #F2F2F2;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: #FFFFFF;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 300px;
-    text-align: center;
-}
-
-footer {
-    background-color: #1F3B73;
-    padding: 1.5rem 2rem;
-    color: #FFFFFF;
-    text-align: center;
-    width: 100%;
-}
-
-.navbar {
-    background-color: #1F3B73; /* fundo azul escuro ocupa 100% */
-    width: 100%;
-}
-
-.container-navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; /* ocupa a largura dentro da navbar */
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-.logo-text {
+.menu li a:hover {
+    background-color: #32D296;
     color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 10px;
 }
 
-.logo img {
-    height: 40px;
-    margin-right: 10px;
-}
-
-.menu {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-}
-
+/* ÍCONE HAMBÚRGUER */
 .menu-icon {
     display: none;
     font-size: 28px;
@@ -255,7 +144,7 @@ footer {
     cursor: pointer;
 }
 
-/* Mobile */
+/* RESPONSIVO PARA MOBILE */
 @media (max-width: 768px) {
     .menu {
         display: none;
@@ -264,29 +153,6 @@ footer {
         background-color: #1F3B73;
         position: absolute;
         top: 70px;
-        left: 0;
-        width: 100%;
-        padding: 20px 0;
-    }
-
-    .menu.active {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: #1F3B73;
-        position: absolute;
-        top: 60px;
         left: 0;
         width: 100%;
         padding: 20px 0;
@@ -301,4 +167,3 @@ footer {
         display: block;
     }
 }
-
