@@ -88,13 +88,8 @@ footer {
 }
 
 .container-navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    justify-content: flex-start;
+    gap: 80px; /* espaçamento entre logo-texto e menu */
 }
 
 /* LOGO */
