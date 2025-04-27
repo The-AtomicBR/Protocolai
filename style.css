@@ -95,6 +95,140 @@ footer {
     display: flex;
     align-items: center;
 }
+.logo-text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    color: #1F3B73;
+}
+
+main {
+    flex: 1;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    background-color: #32D296;
+    color: #FFFFFF;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #28b585;
+}
+
+.cards {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+footer {
+    background-color: #1F3B73;
+    padding: 1.5rem 2rem;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #1F3B73; /* fundo azul escuro ocupa 100% */
+    width: 100%;
+}
+
+.container-navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* ocupa a largura dentro da navbar */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo-text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
 
 .logo img {
     height: 40px;
@@ -166,3 +300,4 @@ footer {
         display: block;
     }
 }
+
