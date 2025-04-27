@@ -4,42 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protocola Ai</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
 
 <nav class="navbar">
     <div class="container-navbar">
         <div class="logo">
-            <img src="logo.png" alt="Logo Protocola Ai">
+            <img src="./style/logo.png" alt="Logo Protocola Ai">
             <span class="logo-text">Protocola Ai</span>
         </div>
-
         <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
         <ul class="menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Planos</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#login">Login</a></li>
         </ul>
     </div>
 </nav>
 
 <main>
     <section class="hero">
-        <h1>Documente. Proteja. Cresça.</h1>
-        <p>Gere Recibos, OS e Protocolos em segundos.</p>
-        <button>Começar Agora</button>
+        <h1>Gere Recibos, Ordens de Serviço e Protocolos em segundos.</h1>
+        <p>Simples, rápido e personalizado.<br>Seu comprovante pronto em poucos cliques, sem complicação.</p>
+        <button onclick="scrollToSection()">Começar Agora</button>
+    </section>
+
+    <section class="how-it-works" id="como-funciona">
+        <h2>Como funciona?</h2>
+        <div class="steps">
+            <div class="step">📝 Preencha o que precisar: nome, valor, serviço.</div>
+            <div class="step">⚡ Gere seu recibo, ordem de serviço ou protocolo na hora.</div>
+            <div class="step">📄 Baixe em PDF ou compartilhe seu link de comprovação.</div>
+        </div>
     </section>
 
     <section class="cards">
         <div class="card">
-            <h3>Cards de funcionalidades</h3>
-            <p>Descrição resumida sobre o que o sistema faz.</p>
+            <h3>📄 Recibos Personalizados</h3>
+            <p>Seus comprovantes prontos, bonitos e profissionais.</p>
         </div>
         <div class="card">
-            <h3>Comparação de Planos</h3>
-            <p>Mostre aos clientes o que cada plano oferece.</p>
+            <h3>🔧 Ordens de Serviço</h3>
+            <p>Gere OS em poucos segundos, ideal para prestadores de serviços.</p>
         </div>
+        <div class="card">
+            <h3>🔑 Protocolos Únicos</h3>
+            <p>Cada documento com número de protocolo para consultas e segurança.</p>
+        </div>
+    </section>
+
+    <section class="cta-final">
+        <h2>Ganhe tempo e impressione seus clientes com documentos profissionais.</h2>
+        <p>Tudo 100% gratuito na versão inicial.</p>
+        <button onclick="scrollToSection()">Começar Agora</button>
     </section>
 </main>
 
@@ -51,6 +69,9 @@
 function toggleMenu() {
   const menu = document.querySelector('.menu');
   menu.classList.toggle('active');
+}
+function scrollToSection() {
+  document.getElementById('como-funciona').scrollIntoView({ behavior: 'smooth' });
 }
 </script>
 
