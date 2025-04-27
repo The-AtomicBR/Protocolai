@@ -16,6 +16,9 @@
             <img src="logo.png" alt="Logo Protocola Ai">
             <span class="logo-text">Protocola Ai</span>
         </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
         <ul class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#planos">Planos</a></li>
@@ -33,7 +36,7 @@
 
 <!-- Benefícios -->
 <section class="beneficios">
-    <h2>Porque escolher o Protocola Ai?</h2>
+    <h2>Por que escolher o Protocola Ai?</h2>
     <div class="cards">
         <div class="card">
             <h3>Profissionalismo</h3>
@@ -50,6 +53,71 @@
     </div>
 </section>
 
+<!-- Planos -->
+<section class="planos" id="planos">
+    <h2>Escolha o plano ideal para você</h2>
+    <p class="subtitulo">No Protocola Ai, até o gratuito é completo. Mas o Pro leva sua gestão para outro nível. 🚀</p>
+
+    <div class="tabela-planos">
+      <table>
+        <thead>
+          <tr>
+            <th>Benefício</th>
+            <th>Protocola Free<br>(Grátis)</th>
+            <th>Protocola Pro<br>(Pago)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Emissão de Recibos Profissionais</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Valor Numérico e Extenso</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Personalização com Logo</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Layouts Premium</td>
+            <td>1 modelo</td>
+            <td>Todos os modelos</td>
+          </tr>
+          <tr>
+            <td>Histórico de Recibos</td>
+            <td>30 dias</td>
+            <td>Ilimitado</td>
+          </tr>
+          <tr>
+            <td>QR Code para Consulta Online</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Cadastro de Clientes e Gráficos Financeiros</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Envio de Recibos por E-mail</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="botoes-planos">
+        <a href="#" class="btn-free">Começar Grátis</a>
+        <a href="#" class="btn-pro">Quero ser Pro!</a>
+      </div>
+    </div>
+</section>
+
 <!-- Rodapé -->
 <footer>
     <div class="footer-content">
@@ -61,6 +129,13 @@
         </div>
     </div>
 </footer>
+
+<script>
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+</script>
 
 </body>
 </html>
