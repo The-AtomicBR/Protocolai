@@ -91,6 +91,11 @@ main {
 }
 
 /* Hero Section */
+.hero-container {
+    max-width: 800px; /* Para o bloco não ficar gigante em telas grandes */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza os textos e botões */
+}
 .hero {
     text-align: center;
     padding: 5rem 2rem;
