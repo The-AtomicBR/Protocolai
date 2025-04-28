@@ -6,6 +6,7 @@
     <title>Cadastro - Protocola Aí</title>
     <link rel="stylesheet" href="../style/style.css">
     <style>
+        /* (Seu CSS já atualizado com o padrão Protocola Aí que montamos) */
         body {
             display: flex;
             justify-content: center;
@@ -14,7 +15,6 @@
             background-color: #ffffff;
             font-family: 'Poppins', sans-serif;
         }
-
         .cadastro-container {
             background: #ffffff;
             padding: 3rem 2rem;
@@ -24,31 +24,26 @@
             width: 100%;
             text-align: center;
         }
-
         .cadastro-container img {
             width: 120px;
             margin-bottom: 10px;
         }
-
         .nome-site {
             font-size: 1rem;
             font-weight: 600;
             color: #1F3B73;
             margin-bottom: 20px;
         }
-
         .cadastro-container h1 {
             color: #1F3B73;
             margin-bottom: 0.5rem;
             font-size: 2rem;
         }
-
         .cadastro-container p {
             color: #666666;
             margin-bottom: 2rem;
             font-size: 1rem;
         }
-
         .cadastro-form input {
             width: 100%;
             padding: 14px;
@@ -58,12 +53,10 @@
             font-size: 1rem;
             transition: border-color 0.3s;
         }
-
         .cadastro-form input:focus {
             outline: none;
             border-color: #1F3B73;
         }
-
         .cadastro-form button {
             width: 100%;
             padding: 14px;
@@ -76,23 +69,19 @@
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
         }
-
         .cadastro-form button:hover {
             background-color: #27ae60;
             transform: scale(1.02);
         }
-
         .link-login {
             margin-top: 1rem;
             font-size: 0.9rem;
         }
-
         .link-login a {
             color: #1F3B73;
             text-decoration: none;
             font-weight: bold;
         }
-
         .link-login a:hover {
             text-decoration: underline;
         }
@@ -104,15 +93,39 @@
         <div class="nome-site">Protocola Aí</div>
         <h1>Comece Agora</h1>
         <p>Crie sua conta gratuita e comece a gerar recibos profissionais em segundos.</p>
-        <form class="cadastro-form">
-            <input type="text" placeholder="Seu Nome" required>
-            <input type="email" placeholder="Seu E-mail" required>
-            <input type="password" placeholder="Sua Senha" required>
+        <form class="cadastro-form" id="cadastroForm">
+            <input type="text" id="nome" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+            <input type="password" id="senha" placeholder="Sua Senha" required>
             <button type="submit">Criar Conta</button>
         </form>
         <div class="link-login">
             Já tem uma conta? <a href="login.html">Faça login</a>
         </div>
     </div>
+
+    <script>
+        const form = document.getElementById('cadastroForm');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Impede o envio tradicional
+
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const senha = document.getElementById('senha').value.trim();
+
+            if (nome && email && senha) {
+                // Salvar os dados no LocalStorage
+                localStorage.setItem('protocola_nome', nome);
+                localStorage.setItem('protocola_email', email);
+                localStorage.setItem('protocola_senha', senha);
+
+                alert('Conta criada com sucesso!');
+                window.location.href = 'login.html'; // Redireciona para o login
+            } else {
+                alert('Por favor, preencha todos os campos.');
+            }
+        });
+    </script>
 </body>
 </html>
