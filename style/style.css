@@ -125,7 +125,13 @@ main {
     transform: scale(1.05); /* Dá uma leve crescida */
     background-color: #28b585; /* Muda um pouco o tom */
 }
-
+.botoes-principais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* espaço entre os botões */
+    margin-top: 20px; /* opcional para dar respiro do texto acima */
+}
 /* Benefícios */
 .beneficios {
     background-color: #F2F2F2;
