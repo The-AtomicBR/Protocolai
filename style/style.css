@@ -142,6 +142,9 @@ main {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
+.tabela-planos {
+    overflow: hidden;
+}
 
 .cards {
     display: flex;
