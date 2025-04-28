@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Protocola Aí</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
 
+        .cadastro-container {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .cadastro-container h1 {
+            color: #1F3B73;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .cadastro-container p {
+            color: #555;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .cadastro-form input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .cadastro-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2ecc71;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cadastro-form button:hover {
+            background-color: #27ae60;
+        }
+
+        .link-login {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .link-login a {
+            color: #1F3B73;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link-login a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="cadastro-container">
+        <h1>Crie sua Conta</h1>
+        <p>Comece gratuitamente a gerar recibos profissionais.</p>
+        <form class="cadastro-form">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <input type="password" placeholder="Sua Senha" required>
+            <button type="submit">Criar Conta</button>
+        </form>
+        <div class="link-login">
+            Já tem uma conta? <a href="login.html">Faça login</a>
+        </div>
+    </div>
+</body>
+</html>
