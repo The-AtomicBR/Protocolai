@@ -6,6 +6,7 @@
     <title>Login - Protocola Aí</title>
     <link rel="stylesheet" href="../style/style.css">
     <style>
+        /* (Seu CSS já atualizado no padrão Protocola Aí) */
         body {
             display: flex;
             justify-content: center;
@@ -14,7 +15,6 @@
             background-color: #ffffff;
             font-family: 'Poppins', sans-serif;
         }
-
         .login-container {
             background: #ffffff;
             padding: 3rem 2rem;
@@ -24,31 +24,26 @@
             width: 100%;
             text-align: center;
         }
-
         .login-container img {
             width: 120px;
             margin-bottom: 10px;
         }
-
         .nome-site {
             font-size: 1rem;
             font-weight: 600;
             color: #1F3B73;
             margin-bottom: 20px;
         }
-
         .login-container h1 {
             color: #1F3B73;
             margin-bottom: 0.5rem;
             font-size: 2rem;
         }
-
         .login-container p {
             color: #666666;
             margin-bottom: 2rem;
             font-size: 1rem;
         }
-
         .login-form input {
             width: 100%;
             padding: 14px;
@@ -58,12 +53,10 @@
             font-size: 1rem;
             transition: border-color 0.3s;
         }
-
         .login-form input:focus {
             outline: none;
             border-color: #1F3B73;
         }
-
         .login-form button {
             width: 100%;
             padding: 14px;
@@ -76,23 +69,19 @@
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
         }
-
         .login-form button:hover {
             background-color: #27ae60;
             transform: scale(1.02);
         }
-
         .link-cadastro {
             margin-top: 1rem;
             font-size: 0.9rem;
         }
-
         .link-cadastro a {
             color: #1F3B73;
             text-decoration: none;
             font-weight: bold;
         }
-
         .link-cadastro a:hover {
             text-decoration: underline;
         }
@@ -104,14 +93,35 @@
         <div class="nome-site">Protocola Aí</div>
         <h1>Bem-vindo de Volta</h1>
         <p>Entre na sua conta e continue organizando seu sucesso.</p>
-        <form class="login-form">
-            <input type="email" placeholder="Seu E-mail" required>
-            <input type="password" placeholder="Sua Senha" required>
+        <form class="login-form" id="loginForm">
+            <input type="email" id="emailLogin" placeholder="Seu E-mail" required>
+            <input type="password" id="senhaLogin" placeholder="Sua Senha" required>
             <button type="submit">Entrar</button>
         </form>
         <div class="link-cadastro">
             Ainda não tem conta? <a href="cadastro.html">Cadastre-se grátis</a>
         </div>
     </div>
+
+    <script>
+        const loginForm = document.getElementById('loginForm');
+
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Impede o envio tradicional
+
+            const emailLogin = document.getElementById('emailLogin').value.trim();
+            const senhaLogin = document.getElementById('senhaLogin').value.trim();
+
+            const emailCadastrado = localStorage.getItem('protocola_email');
+            const senhaCadastrada = localStorage.getItem('protocola_senha');
+
+            if (emailLogin === emailCadastrado && senhaLogin === senhaCadastrada) {
+                alert('Login realizado com sucesso!');
+                window.location.href = '../index.html'; // Aqui redireciona para a home ou dashboard (pode mudar depois)
+            } else {
+                alert('Email ou senha incorretos!');
+            }
+        });
+    </script>
 </body>
 </html>
