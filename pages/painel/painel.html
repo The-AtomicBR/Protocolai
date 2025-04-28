@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel - Protocola Aí</title>
-    <link rel="stylesheet" href="../style/style.css">
+    <title>Painel de Controle - Protocola Aí</title>
+    <link rel="stylesheet" href="../../style/style.css">
     <style>
         body {
             margin: 0;
@@ -14,45 +14,105 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             color: #1F3B73;
-            text-align: center;
         }
 
         .painel-container {
             background: #ffffff;
-            padding: 3rem;
+            padding: 3rem 2rem;
             border-radius: 12px;
             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-            max-width: 600px;
+            max-width: 800px;
             width: 90%;
+            margin-top: 3rem;
+            text-align: center;
         }
 
         .painel-container h1 {
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin-bottom: 1rem;
         }
 
         .painel-container p {
             font-size: 1.1rem;
             color: #555555;
+            margin-bottom: 2rem;
         }
 
-        .botao-sair {
+        .painel-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.5rem;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #32D296;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .botoes-acao {
             margin-top: 2rem;
-            background-color: #e74c3c;
-            color: white;
-            border: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .botao-verde, .botao-azul, .botao-vermelho {
             padding: 12px 24px;
             border-radius: 8px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
             text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            display: inline-block;
+            color: white;
         }
 
-        .botao-sair:hover {
+        .botao-verde {
+            background-color: #2ecc71;
+        }
+
+        .botao-verde:hover {
+            background-color: #27ae60;
+        }
+
+        .botao-azul {
+            background-color: #1F3B73;
+        }
+
+        .botao-azul:hover {
+            background-color: #163265;
+        }
+
+        .botao-vermelho {
+            background-color: #e74c3c;
+        }
+
+        .botao-vermelho:hover {
             background-color: #c0392b;
         }
     </style>
@@ -60,8 +120,28 @@
 <body>
     <div class="painel-container">
         <h1>Bem-vindo, <span id="nomeUsuario"></span>!</h1>
-        <p>Este é o seu painel de controle do <strong>Protocola Aí</strong>.</p>
-        <a href="../index.html" class="botao-sair">Sair</a>
+        <p>Você tem <strong><span id="quantidadeProtocolos">0</span> protocolos</strong> cadastrados.</p>
+
+        <div class="painel-cards">
+            <div class="card">
+                <h2>0</h2>
+                <p>Protocolos criados</p>
+            </div>
+            <div class="card">
+                <h2>0</h2>
+                <p>Protocolos pendentes</p>
+            </div>
+            <div class="card">
+                <h2>0</h2>
+                <p>Protocolos finalizados</p>
+            </div>
+        </div>
+
+        <div class="botoes-acao">
+            <a href="recibos/novo.html" class="botao-verde">Novo Protocolo</a>
+            <a href="recibos/listar.html" class="botao-azul">Ver Protocolos</a>
+            <a href="../../index.html" class="botao-vermelho" onclick="logout()">Sair</a>
+        </div>
     </div>
 
     <script>
@@ -72,6 +152,11 @@
             nomeUsuario.textContent = nome;
         } else {
             nomeUsuario.textContent = 'Usuário';
+        }
+
+        function logout() {
+            localStorage.clear();
+            window.location.href = '../../index.html';
         }
     </script>
 </body>
