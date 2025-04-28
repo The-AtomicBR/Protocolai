@@ -89,14 +89,14 @@ main {
     border-radius: 8px;
     font-weight: bold;
     font-size: 1rem;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Deixa suave a transição */
 }
 
 .btn-primary:hover,
 .btn-free:hover,
 .btn-pro:hover {
-    transform: scale(1.05);
-    background-color: #28b585;
+    transform: scale(1.05); /* Dá uma leve crescida */
+    background-color: #28b585; /* Muda um pouco o tom */
 }
 
 /* Benefícios */
