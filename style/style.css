@@ -14,6 +14,22 @@ body, html {
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
+    animation: fadeIn 1s ease-in; /* <<< ADICIONE AQUI */
+}
+/* Animações sugeridas */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* Animações de seção */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+section.visivel {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 main {
