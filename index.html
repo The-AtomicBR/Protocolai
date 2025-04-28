@@ -143,7 +143,21 @@ function toggleMenu() {
     const menu = document.querySelector('.menu');
     menu.classList.toggle('active');
 }
-</script>
+const sections = document.querySelectorAll('section');
 
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visivel');
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+sections.forEach(section => {
+    observer.observe(section);
+});
+</script>
 </body>
 </html>
