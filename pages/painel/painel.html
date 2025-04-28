@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel - Protocola Aí</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #1F3B73;
+            text-align: center;
+        }
+
+        .painel-container {
+            background: #ffffff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .painel-container h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .painel-container p {
+            font-size: 1.1rem;
+            color: #555555;
+        }
+
+        .botao-sair {
+            margin-top: 2rem;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .botao-sair:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="painel-container">
+        <h1>Bem-vindo, <span id="nomeUsuario"></span>!</h1>
+        <p>Este é o seu painel de controle do <strong>Protocola Aí</strong>.</p>
+        <a href="../index.html" class="botao-sair">Sair</a>
+    </div>
+
+    <script>
+        const nome = localStorage.getItem('protocola_nome');
+        const nomeUsuario = document.getElementById('nomeUsuario');
+
+        if (nome) {
+            nomeUsuario.textContent = nome;
+        } else {
+            nomeUsuario.textContent = 'Usuário';
+        }
+    </script>
+</body>
+</html>
