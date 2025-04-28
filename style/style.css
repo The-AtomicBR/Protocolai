@@ -106,6 +106,11 @@ main {
     text-align: center;
 }
 
+.beneficio-icon {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
 .beneficios h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -133,6 +138,11 @@ main {
 
 .card p {
     color: #666666;
+}
+
+.plano-pro {
+    background-color: #e0f7f4; /* Leve fundo verde clarinho */
+    font-weight: bold;
 }
 
 /* Footer Atualizado */
