@@ -78,6 +78,17 @@ main {
     text-decoration: none;
     font-size: 16px;
 }
+.menu li.login a {
+    background-color: #32D296;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.menu li.login a:hover {
+    background-color: #28b585;
+}
 
 /* Hero Section */
 .hero {
@@ -143,7 +154,7 @@ main {
     background-color: #ffffff;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra mais suave */
     width: 300px;
 }
 
