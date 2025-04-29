@@ -42,17 +42,14 @@ body {
     background-color: #243A73;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza tudo na horizontal */
-    padding: 20px 10px;
-    height: 100%; /* Faz a sidebar ocupar toda a altura */
-}
-
-.logo {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    padding: 20px 10px;
+    height: 100%;
+    justify-content: flex-start;
+}
+.logo {
     padding-top: 10px; /* diminui o espaço de cima */
-    margin-bottom: 20px; /* separa a logo dos botões */
+    margin-bottom: 30px; /* separa a logo dos botões */
 }
 
 .logo img {
