@@ -6,13 +6,38 @@
     <title>Painel de Controle - Protocola Aí</title>
     <link rel="stylesheet" href="../../style/style.css">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            display: flex;
-            height: 100vh;
-            overflow: hidden;
             color: #1F3B73;
+            background-color: #f4f6f8;
+        }
+
+        .container {
+            display: flex;
+            height: calc(100vh - 60px);
+        }
+
+        /* Topbar fixo */
+        .topbar {
+            height: 60px;
+            background-color: #1F3B73;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 20px;
+            gap: 20px;
+        }
+
+        .topbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
         }
 
         /* Menu lateral */
@@ -56,39 +81,13 @@
             opacity: 0.8;
         }
 
-        /* Área principal */
+        /* Conteúdo principal */
         .main-content {
             flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Topo */
-        .topbar {
-            background-color: #1F3B73;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding: 10px 20px;
-            gap: 20px;
-        }
-
-        .topbar a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.95rem;
-        }
-
-        /* Conteúdo */
-        .content-area {
-            flex: 1;
-            background-color: #f4f6f8;
             padding: 2rem;
             overflow-y: auto;
         }
 
-        /* Placeholder inicial */
         .content-placeholder {
             background: white;
             padding: 2rem;
@@ -100,29 +99,28 @@
         .content-placeholder h2 {
             margin-bottom: 1rem;
         }
-
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo">
-            <img src="../../assets/images/logo.png" alt="Protocola Aí">
-        </div>
-        <a href="#" class="verde" onclick="carregarConteudo('novo')">Novo Protocolo</a>
-        <a href="#" class="verde" onclick="carregarConteudo('historico')">Histórico de Protocolos</a>
-        <a href="#" class="verde-premium" onclick="acessarPro('clientes')">Cadastro de Clientes [PRO]</a>
-        <a href="#" class="verde-premium" onclick="acessarPro('dashboard')">Dashboard do Cliente [PRO]</a>
+    <div class="topbar">
+        <a href="#">Planos</a>
+        <a href="#">Conta</a>
+        <a href="#">Suporte</a>
+        <a href="../../index.html">Sair</a>
     </div>
 
-    <div class="main-content">
-        <div class="topbar">
-            <a href="#">Planos</a>
-            <a href="#">Conta</a>
-            <a href="#">Suporte</a>
-            <a href="../../index.html">Sair</a>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="../../assets/images/logo.png" alt="Protocola Aí">
+            </div>
+            <a href="#" class="verde" onclick="carregarConteudo('novo')">Novo Protocolo</a>
+            <a href="#" class="verde" onclick="carregarConteudo('historico')">Histórico de Protocolos</a>
+            <a href="#" class="verde-premium" onclick="acessarPro('clientes')">Cadastro de Clientes [PRO]</a>
+            <a href="#" class="verde-premium" onclick="acessarPro('dashboard')">Dashboard do Cliente [PRO]</a>
         </div>
 
-        <div class="content-area" id="conteudo">
+        <div class="main-content" id="conteudo">
             <div class="content-placeholder">
                 <h2>Novo Protocolo</h2>
                 <p>Preencha os dados para criar um novo protocolo!</p>
@@ -143,7 +141,6 @@
 
         function acessarPro(funcao) {
             alert('Essa funcionalidade é exclusiva para usuários Pro! Conheça nossos planos.');
-            // Em breve substituiremos por blur + modal educado
         }
     </script>
 </body>
