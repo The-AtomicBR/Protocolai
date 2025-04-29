@@ -85,10 +85,10 @@
         }
 
         .main-content {
-            flex: 1;
-            padding: 40px;
-            overflow-y: auto;
-        }
+    flex: 1;
+    padding: 40px 20px;
+    overflow-y: auto;
+}
 
         .card {
             max-width: 900px;
@@ -112,8 +112,3 @@
             color: #666;
         }
 
-.main-content {
-    flex: 1;
-    padding: 40px 20px;
-    overflow-y: auto;
-}
