@@ -1,129 +1,105 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: #1F3B73;
-    background-color: #f4f6f8;
-    height: 100vh;
-}
-
-.container {
-    display: flex;
-    height: calc(100vh - 60px);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
 }
 
 .topbar {
-    height: 60px;
-    background-color: #1F3B73;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 30px;
-    gap: 30px;
+  background-color: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* sombra sutil */
+  position: relative;
+  z-index: 10;
 }
 
 .topbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 8px 12px;
-    border-radius: 8px;
-    transition: background-color 0.3s;
+  color: #1e293b;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .topbar a:hover {
-    background-color: #324B8C;
+  color: #0f766e;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
 }
 
 .sidebar {
-    width: 240px;
-    background-color: #243A73;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 10px;
-    height: 100vh;
-    justify-content: flex-start; /* <--- Aqui é o pulo do gato */
-}
-.logo {
-    margin-bottom: 30px; /* separa a logo dos botões */
+  background-color: #1e3a8a; /* azul escuro */
+  padding: 30px 15px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.05);
 }
 
-.logo img {
-    max-width: 200px;
-    height: auto;
-    margin-top: -90px; /* valor negativo faz subir */
+.sidebar .logo {
+  margin-bottom: 25px;
+}
+
+.sidebar .logo img {
+  width: 140px;
 }
 
 .sidebar a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 14px 20px;
-    margin: 10px 0;
-    font-size: 0.95rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    background: #32D296;
-    border: none;
-    border-radius: 12px;
-    transition: background-color 0.3s, transform 0.2s;
-    font-family: 'Noto Sans', sans-serif;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #10b981; /* verde padrão */
+  transition: all 0.3s ease;
 }
 
 .sidebar a:hover {
-    background-color: #28B17C;
-    transform: translateY(-2px);
+  background-color: #059669; /* verde escuro no hover */
 }
 
-
-.verde {
-    background-color: #32D296;
+.sidebar a.pro {
+  background-color: #0ea5e9; /* azul claro para destaque */
 }
 
-.verde-premium {
-    background-color: #28B17C;
+.sidebar a.pro:hover {
+  background-color: #0284c7;
 }
 
 .main-content {
-    flex: 1;
-    padding: 40px 20px;
-    overflow-y: auto;
-    min-height: calc(100vh - 60px); /* Garante alinhamento visual com a sidebar */
+  flex: 1;
+  padding: 40px;
 }
 
 .card {
-    width: 100%;
-    max-width: 1100px;
-    margin: 20px auto;
-    background: white;
-    padding: 3rem;
-    border-radius: 16px;
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
 
 .card h2 {
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 0.8rem;
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #1e293b;
 }
 
 .card p {
-    font-size: 1rem;
-    color: #666;
+  font-size: 1rem;
+  color: #475569;
 }
