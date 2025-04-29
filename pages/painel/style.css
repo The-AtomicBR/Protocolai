@@ -52,7 +52,7 @@ body {
 }
 
 .logo img {
-    max-width: 300px;
+    max-width: 100px;
     height: auto;
     margin-top: -20px; /* valor negativo faz subir */
 }
