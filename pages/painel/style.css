@@ -111,3 +111,9 @@
             font-size: 1rem;
             color: #666;
         }
+
+.main-content {
+    flex: 1;
+    padding: 40px 20px;
+    overflow-y: auto;
+}
