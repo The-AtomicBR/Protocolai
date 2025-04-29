@@ -49,6 +49,15 @@ body {
 }
 
 /* ================= SIDEBAR ================= */
+.sidebar-section-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #cbd5e1;
+  text-transform: uppercase;
+  padding: 15px 10px 5px 10px;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
 .sidebar {
   background-color: #1e3a8a; /* Azul escuro */
   padding: 30px 20px;
