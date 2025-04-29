@@ -89,9 +89,7 @@ body {
 .sidebar .pro-tag {
   font-size: 12px;
   font-weight: 600;
-  color: #fbbf24; /* Dourado elegante */
-  display: inline-block;
-  margin-top: 2px;
+  color: #fbbf24;
   letter-spacing: 0.5px;
 }
 
