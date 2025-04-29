@@ -54,7 +54,7 @@ body {
 .logo img {
     max-width: 200px;
     height: auto;
-    margin-top: -40px; /* valor negativo faz subir */
+    margin-top: -70px; /* valor negativo faz subir */
 }
 
 .sidebar a {
