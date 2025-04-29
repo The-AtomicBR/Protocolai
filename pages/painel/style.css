@@ -51,7 +51,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 0;
+    padding-top: 10px; /* diminui o espaço de cima */
+    margin-bottom: 20px; /* separa a logo dos botões */
 }
 
 .logo img {
