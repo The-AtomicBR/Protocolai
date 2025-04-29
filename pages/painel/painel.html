@@ -24,19 +24,20 @@
 
 <div class="container">
   <div class="sidebar">
-    <a href="#" class="active" onclick="carregarConteudo('novo')">
-      📄 Novo Protocolo
+    <a href="#" class="active" onclick="carregarConteudo('novo')">📄 Novo Protocolo</a>
+    <a href="#" onclick="carregarConteudo('historico')">📁 Histórico</a>
+    <a href="#" class="pro" onclick="acessarPro('favoritos')">
+      <span class="pro-label">⭐ Favoritos</span>
+      <span class="pro-tag">[PRO]</span>
     </a>
-
-    <a href="#" onclick="carregarConteudo('historico')">
-      📁 Histórico
+    <a href="#" class="pro" onclick="acessarPro('modelos')">
+      <span class="pro-label">📦 Meus Modelos</span>
+      <span class="pro-tag">[PRO]</span>
     </a>
-
     <a href="#" class="pro" onclick="acessarPro('clientes')">
       <span class="pro-label">👥 Cadastro de Clientes</span>
       <span class="pro-tag">[PRO]</span>
     </a>
-
     <a href="#" class="pro" onclick="acessarPro('dashboard')">
       <span class="pro-label">📊 Dashboard</span>
       <span class="pro-tag">[PRO]</span>
@@ -49,7 +50,7 @@
       <p>Preencha os dados para criar um novo protocolo profissional com segurança e praticidade.</p>
     </div>
   </div>
-</div> <!-- Fim da .container -->
+</div> <!-- fechamento da .container -->
     <script defer>
         function carregarConteudo(pagina) {
             const conteudo = document.getElementById('conteudo');
