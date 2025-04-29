@@ -76,7 +76,8 @@ body {
 }
 /* Hover suave */
 .sidebar a:hover {
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: #22c55e33; /* verde suave no hover */
+  color: #ffffff;
 }
 
 /* Botões PRO */
