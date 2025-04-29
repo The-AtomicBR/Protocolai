@@ -47,7 +47,6 @@ body {
     height: 100%;
 }
 .logo {
-    padding-top: 10px; /* diminui o espaço de cima */
     margin-bottom: 30px; /* separa a logo dos botões */
 }
 
