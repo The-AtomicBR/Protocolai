@@ -58,8 +58,8 @@ body {
   letter-spacing: 1px;
 }
 .sidebar {
-  background-color: #1e3a8a; /* Azul escuro */
-  padding: 30px 20px;
+  background-color: #1e3a8a;
+  padding: 20px 20px 30px 20px; /* antes era 30px no topo */
   width: 250px;
   display: flex;
   flex-direction: column;
