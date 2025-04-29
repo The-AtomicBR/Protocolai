@@ -1,1 +1,110 @@
 
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #1F3B73;
+            background-color: #f4f6f8;
+        }
+
+        .container {
+            display: flex;
+            height: calc(100vh - 60px);
+        }
+
+        .topbar {
+            height: 60px;
+            background-color: #1F3B73;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 30px;
+            gap: 30px;
+        }
+
+        .topbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: opacity 0.3s;
+        }
+
+        .topbar a:hover {
+            opacity: 0.8;
+        }
+
+        .sidebar {
+            width: 240px;
+            background-color: #243A73;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 10px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .logo img {
+            width: 80px;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 16px;
+            margin: 6px 0;
+            border-radius: 8px;
+            font-weight: 500;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.3s, transform 0.2s;
+            font-size: 0.95rem;
+        }
+
+        .sidebar a:hover {
+            transform: translateX(4px);
+            background-color: #2c4a94;
+        }
+
+        .verde {
+            background-color: #32D296;
+        }
+
+        .verde-premium {
+            background-color: #28B17C;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .card {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .card h2 {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 0.8rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #666;
+        }
