@@ -53,6 +53,7 @@ body {
 .logo img {
     max-width: 300px;
     height: auto;
+    margin-bottom: 30px; /* separa a logo dos botões */
 }
 
 .sidebar a {
