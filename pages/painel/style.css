@@ -59,8 +59,9 @@ body {
 /* Estilo geral dos botões da sidebar */
 .sidebar a {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column; /* IMPORTANTE para quebrar em 2 linhas */
+  align-items: flex-start;
+  gap: 4px;
   justify-content: flex-start;
   padding: 10px 16px;
   border-radius: 8px;
@@ -70,9 +71,10 @@ body {
   color: #ffffff;
   text-decoration: none;
   transition: background 0.3s ease;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  line-height: 1.3;
 }
 /* Hover suave */
 .sidebar a:hover {
