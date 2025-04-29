@@ -43,7 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 10px 20px 10px; /* Mudei o padding */
+    padding: 10px 10px 20px 10px; /* Reduz o padding-top para 10px */
     height: 100%;
 }
 .logo {
