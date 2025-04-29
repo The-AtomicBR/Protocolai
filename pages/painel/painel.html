@@ -11,33 +11,32 @@
 </head>
 <body>
     <div class="topbar">
-        <div class="logo">
-            <img src="../../assets/images/logo4.png" alt="Protocola Aí">
-        </div>
-        <div class="top-links">
-            <a href="#">Planos</a>
-            <a href="#">Conta</a>
-            <a href="#">Suporte</a>
-            <a href="../../index.html">Sair</a>
-        </div>
+    <div class="logo">
+        <img src="../../assets/images/logo4.png" alt="Protocola Aí">
+    </div>
+    <div class="top-links">
+        <a href="#">Planos</a>
+        <a href="#">Conta</a>
+        <a href="#">Suporte</a>
+        <a href="../../index.html">Sair</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <a href="#" class="active" onclick="carregarConteudo('novo')">📄 Novo Protocolo</a>
+        <a href="#" onclick="carregarConteudo('historico')">📁 Histórico</a>
+        <a href="#" class="pro" onclick="acessarPro('clientes')">👥 Cadastro de Clientes [PRO]</a>
+        <a href="#" class="pro" onclick="acessarPro('dashboard')">📊 Dashboard do Cliente [PRO]</a>
     </div>
 
-    <div class="container">
-        <div class="sidebar">
-            <!-- Logo REMOVIDA DAQUI -->
-            <a href="#" class="verde" onclick="carregarConteudo('novo')">📄 Novo Protocolo</a>
-            <a href="#" class="verde" onclick="carregarConteudo('historico')">📁 Histórico</a>
-            <a href="#" class="verde-premium" onclick="acessarPro('clientes')">👥 Cadastro de Clientes [PRO]</a>
-            <a href="#" class="verde-premium" onclick="acessarPro('dashboard')">📊 Dashboard do Cliente [PRO]</a>
-        </div>
-
-        <div class="main-content" id="conteudo">
-            <div class="card">
-                <h2>📄 Novo Protocolo</h2>
-                <p>Preencha os dados para criar um novo protocolo profissional com segurança e praticidade.</p>
-            </div>
+    <div class="main-content" id="conteudo">
+        <div class="card">
+            <h2>📄 Novo Protocolo</h2>
+            <p>Preencha os dados para criar um novo protocolo profissional com segurança e praticidade.</p>
         </div>
     </div>
+</div>
 
     <script defer>
         function carregarConteudo(pagina) {
