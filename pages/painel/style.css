@@ -53,7 +53,7 @@ body {
 .logo img {
     max-width: 300px;
     height: auto;
-    margin-bottom: 30px; /* separa a logo dos botões */
+    margin-top: -20px; /* valor negativo faz subir */
 }
 
 .sidebar a {
