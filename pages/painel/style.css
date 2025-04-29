@@ -78,12 +78,6 @@ body {
 .pro-label {
   white-space: nowrap;
 }
-.pro-tag {
-  font-size: 12px;
-  font-weight: 600;
-  color: #fbbf24;
-  letter-spacing: 0.3px;
-}
 /* Botões PRO */
 .sidebar a.pro {
   color: #ffffff;
@@ -93,7 +87,7 @@ body {
   font-size: 12px;
   font-weight: 600;
   color: #fbbf24;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 
 .sidebar a.pro:hover {
