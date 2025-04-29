@@ -6,8 +6,6 @@
     <title>Painel de Controle - Protocola Aí</title>
     <link rel="stylesheet" href="../../style/style.css"> <!-- Primeiro o geral -->
     <link rel="stylesheet" href="style.css"> <!-- Depois o específico -->
-
-    
 </head>
 <body>
     <div class="topbar">
@@ -36,10 +34,9 @@
         </div>
     </div>
 
-    <script>
+    <script defer>
         function carregarConteudo(pagina) {
             const conteudo = document.getElementById('conteudo');
-
             if (pagina === 'novo') {
                 conteudo.innerHTML = `
                     <div class="card">
