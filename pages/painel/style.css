@@ -10,11 +10,12 @@ body {
   flex-direction: column;
 }
 
+/* ================= TOPBAR ================= */
 .topbar {
   background-color: #ffffff;
   padding: 15px 30px;
   display: flex;
-  justify-content: space-between; /* separa logo e links */
+  justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   position: relative;
@@ -41,14 +42,15 @@ body {
   color: #0f766e;
 }
 
-
+/* ================= CONTAINER ================= */
 .container {
   display: flex;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 60px); /* Ajuste da altura: viewport - topbar */
 }
 
+/* ================= SIDEBAR ================= */
 .sidebar {
-  background-color: #1e3a8a; /* azul escuro */
+  background-color: #1e3a8a; /* Azul escuro */
   padding: 30px 20px;
   width: 250px;
   display: flex;
@@ -56,10 +58,10 @@ body {
   gap: 10px;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.05);
 }
-/* Estilo geral dos botões da sidebar */
+
 .sidebar a {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Para alinhar ícone + texto + PRO */
   align-items: flex-start;
   gap: 2px;
   padding: 10px 16px;
@@ -71,34 +73,36 @@ body {
   background-color: transparent;
   transition: background 0.3s ease;
 }
-/* Hover suave */
+
 .sidebar a:hover {
-  background-color: #22c55e33;
+  background-color: #22c55e33; /* Verde suave no hover */
 }
+
+/* Texto principal dos botões */
 .pro-label {
   white-space: nowrap;
 }
-/* Botões PRO */
-.sidebar a.pro {
-  color: #ffffff;
-  font-weight: 500;
-}
+
+/* Tag [PRO] dourada */
 .sidebar .pro-tag {
   font-size: 12px;
   font-weight: 600;
   color: #fbbf24;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
 }
 
-.sidebar a.pro:hover {
-  background-color: rgba(255, 255, 255, 0.08);
-}
-/* Item ativo */
+/* Botão ativo (ex: Novo Protocolo) */
 .sidebar a.active {
   background-color: #0f766e;
   color: #ffffff;
 }
 
+/* Botões PRO com hover diferenciado */
+.sidebar a.pro:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ================= MAIN CONTENT ================= */
 .main-content {
   flex: 1;
   padding: 40px;
