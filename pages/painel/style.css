@@ -43,8 +43,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 10px 20px 10px; /* Reduz o padding-top para 10px */
-    height: 100%;
+    padding: 20px 10px;
+    height: 100vh;
+    justify-content: flex-start; /* <--- Aqui é o pulo do gato */
 }
 .logo {
     margin-bottom: 30px; /* separa a logo dos botões */
