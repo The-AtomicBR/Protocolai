@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conta - Protocola Aí</title>
+  <link rel="stylesheet" href="../../style/style.css">
+  <style>
+    body {
+      display: flex;
+      font-family: sans-serif;
+      margin: 0;
+    }
+    .sidebar {
+      width: 220px;
+      background: #f5f5f5;
+      padding: 20px;
+      height: 100vh;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar li {
+      margin: 16px 0;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: #333;
+    }
+    .content {
+      flex: 1;
+      padding: 40px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      width: 100%;
+      margin-top: 4px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 8px 16px;
+      background: #efefef;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    label {
+      font-weight: bold;
+    }
+    .avatar {
+      width: 64px;
+      height: 64px;
+      background: #ccc;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 16px;
+    }
+    .radio-group label {
+      margin-right: 20px;
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+  <nav class="sidebar">
+    <ul>
+      <li><a href="#">📄 Novo Protocolo</a></li>
+      <li><a href="#">📁 Histórico</a></li>
+      <li><a href="#">⭐ Favoritos</a></li>
+      <li><a href="#">📦 Modelos</a></li>
+      <li><a href="#">👥 Clientes</a></li>
+    </ul>
+  </nav>
+  <main class="content">
+    <section class="section">
+      <h2>Dados da conta</h2>
+      <label>Nome</label>
+      <input type="text" value="João Silva">
+      <label>Email</label>
+      <input type="email" value="joao@example.com">
+      <button>Alterar senha</button>
+    </section>
+
+    <section class="section">
+      <h2>Foto de perfil</h2>
+      <div class="avatar"></div>
+      <button>Alterar foto</button>
+    </section>
+
+    <section class="section">
+      <h2>Preferências de uso</h2>
+      <div>
+        <strong>Idioma:</strong><br>
+        <label><input type="radio" name="idioma" checked> Português</label>
+        <label><input type="radio" name="idioma"> Inglês (em breve)</label>
+      </div>
+      <div style="margin-top: 10px;">
+        <strong>Tema:</strong><br>
+        <label><input type="radio" name="tema"> Claro</label>
+        <label><input type="radio" name="tema"> Escuro</label>
+      </div>
+      <div style="margin-top: 10px;">
+        <label><input type="checkbox" checked> Receber novidades no e-mail</label>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Plano de assinatura</h2>
+      <p><strong>Protocola Free</strong><br>Vencimento: 24 de abril de 2024</p>
+      <button>Alterar plano</button>
+    </section>
+
+    <section class="section">
+      <h2>Ações da conta</h2>
+      <button>Sair da conta</button>
+      <button style="margin-left: 10px; background-color: #ffe5e5;">Excluir conta</button>
+    </section>
+  </main>
+</body>
+</html>
