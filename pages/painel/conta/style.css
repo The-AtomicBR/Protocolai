@@ -1,13 +1,16 @@
 body {
   font-family: sans-serif;
   margin: 0;
-  background-color: #fff;
+  background-color: #f7f9fc; /* Fundo suave */
 }
 
 .content {
   max-width: 800px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* Sombra sutil */
 }
 
 h2 {
@@ -19,21 +22,30 @@ h2 {
 }
 
 input[type="text"],
-input[type="email"] {
-  padding: 8px;
+input[type="email"],
+textarea {
+  padding: 10px;
   width: 100%;
   margin-top: 4px;
   margin-bottom: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
 button {
-  padding: 8px 16px;
-  background: #efefef;
-  border: 1px solid #ccc;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #0056b3;
 }
 
 label {
@@ -55,4 +67,13 @@ label {
 .radio-group label {
   margin-right: 20px;
   font-weight: normal;
+}
+
+/* Bloco de boas-vindas */
+.resumo-conta {
+  background: #e9f3ff;
+  border: 1px solid #c8e0ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
