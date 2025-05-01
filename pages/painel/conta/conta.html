@@ -5,17 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conta - Protocola Aí</title>
   <link rel="stylesheet" href="style.css">
- 
 </head>
 <body>
 
   <main class="content">
+    
+    <section class="section resumo-conta">
+      <h3>Olá, João!</h3>
+      <p>Você está usando o plano <strong>Protocola Free</strong>.</p>
+      <p>Último acesso: 01/05/2025 às 20:47</p>
+    </section>
+
     <section class="section">
       <h2>Dados da conta</h2>
-      <label>Nome</label>
-      <input type="text" value="João Silva">
-      <label>Email</label>
-      <input type="email" value="joao@example.com">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" value="João Silva">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" value="joao@example.com">
+
       <button>Alterar senha</button>
     </section>
 
@@ -43,6 +51,19 @@
     </section>
 
     <section class="section">
+      <h2>Tem alguma sugestão para melhorar o Protocola Aí?</h2>
+      <textarea rows="4" placeholder="Sua sugestão aqui..." style="width:100%; padding:10px;"></textarea>
+      <div style="margin-top: 10px;">
+        <button>Enviar sugestão</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Segurança</h2>
+      <p>Seus dados estão protegidos com criptografia e nunca serão compartilhados com terceiros.</p>
+    </section>
+    
+    <section class="section">
       <h2>Plano de assinatura</h2>
       <p><strong>Protocola Free</strong><br>Vencimento: 24 de abril de 2024</p>
       <button>Alterar plano</button>
@@ -53,6 +74,7 @@
       <button>Sair da conta</button>
       <button style="margin-left: 10px; background-color: #ffe5e5;">Excluir conta</button>
     </section>
+
   </main>
 </body>
 </html>
